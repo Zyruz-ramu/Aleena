@@ -179,3 +179,12 @@
   "logo": "https://telegra.ph/file/e3685fe4b49df44a374a8.jpg",
 }
 
+{
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    }
+  ],
+   "name": "Aleena",
+   "repository": "https://github.com/Zyruz-ramu/Aleena",
+   "success_url": "https://telegram.dog/Aleena",
+   "logo": "https://telegra.ph/file/e3685fe4b49df44a374a8.jpg"
+}
