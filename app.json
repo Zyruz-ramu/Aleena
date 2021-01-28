@@ -4,3 +4,12 @@
     "options": {
      "version": "1.1"
      },
+    "plan": "heroku-postgrenl"
+  }
+    
+ ],
+"dicription" : " python based telegram bot with exrta features and well maintaind by team UNITED"
+ "EVN": {
+  "discription": "Set this to True if you want ! to be a command prefix along with /",
+  "value": "true"
+}, 
