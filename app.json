@@ -1,5 +1,5 @@
 { 
-  "addens": [ 
+  "addons": [ 
   { 
     "options": {
      "version": "1.1"
@@ -13,3 +13,5 @@
   "discription": "Set this to True if you want ! to be a command prefix along with /",
   "value": "true"
 }, 
+"website": "https://cutt.ly/GjBGQ0D",
+"logo": "https://telegra.ph/file/e3685fe4b49df44a374a8.jpg"
