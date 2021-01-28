@@ -5,7 +5,7 @@
     "options": {
      "version": "1.1"
      },
-    "plan": "heroku-postgrenl"
+    "plan": "heroku-postgresql"
   }
     
  ],
