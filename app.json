@@ -1,6 +1,6 @@
 {
   "NAME": "Aleena bot"
-  "discription": "trying to make your work easy and smart"
+  "discription": "trying to make your work easy and smart",
 }
 { 
   "addons": [ 
@@ -12,7 +12,7 @@
   }
     
  ],
-"dicription" : " python based telegram bot with exrta features and well maintaind by team UNITED"
+"dicription" : " python based telegram bot with exrta features and well maintaind by team UNITED",
  "EVN": {
   "discription": "Set this to True if you want ! to be a command prefix along with /",
   "value": "true"
