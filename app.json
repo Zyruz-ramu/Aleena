@@ -28,7 +28,7 @@
       "url": "heroku/ruby"
     }
   ]
-  "SUDO USER": {
+  "SUDO_USER": {
   "discription": "access to this bot",
   "value": "1471234074"
 },
