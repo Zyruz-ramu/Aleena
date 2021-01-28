@@ -1,7 +1,4 @@
-{
-  "NAME": "Aleena bot"
-  "discription" "trying to make your work easy and smart",
-}
+
 { 
   "addons": [ 
   { 
@@ -13,79 +10,43 @@
     
  ],
 "dicription" : " python based telegram bot with exrta features and well maintaind by team UNITED",
- "EVN": {
-  "discription": "Set this to True if you want ! to be a command prefix along with /",
+ "env": {
+    "ALLOW_EXCL": {
+      "discription": "Set this to True if you want ! to be a command prefix along with /",
   "value": "true"
 }, 
-"website": "https://cutt.ly/GjBGQ0D",
-"logo": "https://telegra.ph/file/e3685fe4b49df44a374a8.jpg"
-{
-  "buildpacks": [
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-pgbouncer"
-    },
-    {
-      "url": "heroku/ruby"
-    }
-  ]
- 
- "ALLOW_EXCL": {
-         "description": "Set this to True if you want ! to be a command prefix along with /",
-         "value": "True"
-      },
-      "BAN_STICKER": {
-         "description": "ID of the sticker you want to use when banning people.",
-         "required": false,
-         "value": ""
-      },
-      "MESSAGE_DUMP": {
-         "description": "optional: a chat where your replied saved messages are stored, to stop people deleting their old",
-         "required": false,
-         "value": ""   
-      },
-      "DEL_CMDS": {
-         "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
-         "value": "False"
-         
-      },
-      "GBAN_LOGS": {	
-         "description": "Gban log channel, include the hyphen too: ex: -123456",
-         "required": false,
-         "value": ""	
-      },
-      "ENV": {
+"BAN_STKR": {
+   "discription": "drop sticker id here. sticker will be shown after banning users",
+    "value": ""
+},
+"ENV": {
          "description": "Setting this to ANYTHING will enable environment variables.",
          "value": "ANYTHING"
-      },
-      "KICK_STICKER": {
+},
+"KICK_STICKER": {
          "description": "ID of the sticker you want to use when kicking people.",
          "required": false,
          "value": ""
-      },
-      "SQLALCHEMY_DATABASE_URI": {
-         "description": "Your postgres sql db, empty this field if you dont have one.",
-         "required": false,
-         "value": "sqldbtype://username:pw@hostname:port/db_name"
-      },      
-      "OWNER_ID": {
+},
+   "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "value": "1471234074"
-      },
-      "OWNER_NAME": {
+   },
+    "OWNER_NAME": {
          "description": "Your Name",
          "value": "zyruz"
       },
-      "DEV_USERS": {
+    "DEV_USERS": {
          "description": "ID of users who are Dev (can use /py etc.)",
          "required": false,
          "value": "1471234074"
       },
-      "CASH_API_KEY": {
+     "CASH_API_KEY": {
          "description": "Required for currency converter",
          "required": false,
          "value": "-xyz"
       },
-      "TIME_API_KEY": {
+    "TIME_API_KEY": {
          "description": "Required for timezone information",
          "value": "-xyz"
       },
@@ -93,7 +54,7 @@
          "description": "Required for lastfm plugin",
          "value": "-xyz"
       },
-       "START_IMG": {
+     "START_IMG": {
          "description": "Image shows when hit /start",
          "value": "https://telegra.ph/file/e3685fe4b49df44a374a8.jpg"    
       },
@@ -157,34 +118,24 @@
          "value": " " 
       }
    },
-{
-  "repository": "https://github.com/Zyruz-ramu/Aleena.git"
-}
-
-{
-  "stack": "heroku-20"
-}
-{
-  "success_url": "/welcome"
-}
-{
-  "scripts": {
-    "postdeploy": "bundle exec rake bootstrap",
-    "pr-predestroy": "bundle exec rake cleanup",
-  }
-  {
-  "name": "Aleena Bot"
-}
-{ 
-  "logo": "https://telegra.ph/file/e3685fe4b49df44a374a8.jpg",
-}
-
-{
+     "keywords": [
+      "telegram",
+      "weeb",
+      "group",
+      "manager",
+      "aleenabot"
+      
+   ],
+   "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python"
+    },
+    {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     }
   ],
    "name": "Aleena",
-   "repository": "https://github.com/Zyruz-ramu/Aleena",
-   "success_url": "https://telegram.dog/Aleena",
+   "repository": "https://github.com/SZyruz-ramu/Aleena",
+   "success_url": "https://telegram.dog/aleena",
    "logo": "https://telegra.ph/file/e3685fe4b49df44a374a8.jpg"
 }
