@@ -15,3 +15,38 @@
 }, 
 "website": "https://cutt.ly/GjBGQ0D",
 "logo": "https://telegra.ph/file/e3685fe4b49df44a374a8.jpg"
+{
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-pgbouncer"
+    },
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+  "SUDO USER": {
+  "discription": "access to this bot",
+  "value": "1471234074"
+},
+
+{
+  "repository": "https://github.com/Zyruz-ramu/Aleena.git"
+}
+
+{
+  "stack": "heroku-20"
+}
+{
+  "success_url": "/welcome"
+}
+{
+  "scripts": {
+    "postdeploy": "bundle exec rake bootstrap",
+    "pr-predestroy": "bundle exec rake cleanup",
+  }
+  {
+  "name": "Aleena Bot"
+}
+{ 
+  "logo": "https://telegra.ph/file/e3685fe4b49df44a374a8.jpg",
+}
