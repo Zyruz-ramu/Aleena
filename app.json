@@ -17,6 +17,7 @@
 }, 
 "BAN_STKR": {
    "discription": "drop sticker id here. sticker will be shown after banning users",
+   "required": false,
     "value": ""
 },
 "ENV": {
