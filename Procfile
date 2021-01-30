@@ -1,2 +1,2 @@
 worker: -m aleena bot 
-python 3.9.0
+ps:scale worker=1
