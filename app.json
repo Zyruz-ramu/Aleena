@@ -1,53 +1,71 @@
-
-{ 
-  "addons": [ 
-  { 
-    "options": {
-     "version": "12"
-     },
-    "plan": "heroku-postgresql"
-  }
-    
- ],
-"dicription" : " python based telegram bot with exrta features and well maintaind by team UNITED",
- "env": {
-    "ALLOW_EXCL": {
-      "discription": "Set this to True if you want ! to be a command prefix along with /",
-  "value": "true"
-}, 
-"BAN_STKR": {
-   "discription": "drop sticker id here. sticker will be shown after banning users",
-   "required": false,
-    "value": ""
-},
-"ENV": {
+{
+   "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "description": "A telegram pro bot to manage ur groups and much extra features.",
+   "env": {
+      "ALLOW_EXCL": {
+         "description": "Set this to True if you want ! to be a command prefix along with /",
+         "value": "True"
+      },
+      "BAN_STICKER": {
+         "description": "ID of the sticker you want to use when banning people.",
+         "required": false,
+         "value": ""
+      },
+      "MESSAGE_DUMP": {
+         "description": "optional: a chat where your replied saved messages are stored, to stop people deleting their old",
+         "required": false,
+         "value": ""   
+      },
+      "DEL_CMDS": {
+         "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
+         "value": "False"
+         
+      },
+      "GBAN_LOGS": {	
+         "description": "Gban log channel, include the hyphen too: ex: -123456",
+         "required": false,
+         "value": ""	
+      },
+      "ENV": {
          "description": "Setting this to ANYTHING will enable environment variables.",
          "value": "ANYTHING"
-},
-"KICK_STICKER": {
+      },
+      "KICK_STICKER": {
          "description": "ID of the sticker you want to use when kicking people.",
          "required": false,
          "value": ""
-},
-   "OWNER_ID": {
-         "description": "Your user ID as an integer.",
-         "value": "1471234074"
-   },
-    "OWNER_NAME": {
-         "description": "Your Name",
-         "value": "zyruz"
       },
-    "DEV_USERS": {
-         "description": "ID of users who are Dev (can use /py etc.)",
+      "SQLALCHEMY_DATABASE_URI": {
+         "description": "Your postgres sql db, empty this field if you dont have one.",
          "required": false,
-         "value": "1471234074"
+         "value": "sqldbtype://username:pw@hostname:port/db_name"
+      },      
+      "OWNER_ID": {
+         "description": "Your user ID as an integer.",
+         "value": "1777644370"
       },
-     "CASH_API_KEY": {
+      "OWNER_NAME": {
+         "description": "Your Name",
+         "value": "@esto_420"
+      },
+      "DEV_USERS": {
+         "description": "ID of users who are Dev (can use /py etc.)",
+         "required": "True",
+         "value": "1777644370"
+      },
+      "CASH_API_KEY": {
          "description": "Required for currency converter",
          "required": false,
          "value": "-xyz"
       },
-    "TIME_API_KEY": {
+      "TIME_API_KEY": {
          "description": "Required for timezone information",
          "value": "-xyz"
       },
@@ -55,9 +73,9 @@
          "description": "Required for lastfm plugin",
          "value": "-xyz"
       },
-     "START_IMG": {
+       "START_IMG": {
          "description": "Image shows when hit /start",
-         "value": "https://telegra.ph/file/e3685fe4b49df44a374a8.jpg"    
+         "value": "https://telegra.ph/file/3045588b3ecbfd54998b8.jpg"    
       },
       "API_OPENWEATHER": {
          "description": "Required for weather information",
@@ -80,12 +98,12 @@
       "SUDO_USERS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
          "required": false,
-         "value": "1471234074"
+         "value": "1777644370"
       },
       "SUPPORT_USERS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
-         "required": false,
-         "value": "1471234074"
+         "required": "True",
+         "value": "1777644370"
       },
      
       "TOKEN": {
@@ -106,7 +124,7 @@
       "WHITELIST_USERS": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
          "required": false,
-         "value": "1471234074"
+         "value": "1777644370"
       },
       "WALL_API":{
          "description": "Enter wall api",
@@ -114,29 +132,20 @@
          "value": ""
       },
       "LYDIA_API": {
-         "description": "Put here lydia API.",
-         "required": false,
-         "value": " " 
+         "description": "Put here lydia API.venoghil",
+         "required": true,
+         "value": "9459646ca3dff1ff00ff4a98c7ead3368492c77cd2252f0dbb8d6959eb97e884fd65001a51faf22230774b3ae7df7b2ebd9defdeb70b90f6de10a449d783245a" 
       }
    },
-     "keywords": [
+   "keywords": [
       "telegram",
       "weeb",
       "group",
       "manager",
-      "aleenabot"
+      "HydraProBot"
       
    ],
-   "buildpacks": [
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-python"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-    }
-  ],
-   "name": "Aleena",
-   "repository": "https://github.com/Zyruz-ramu/Aleena",
-   "success_url": "https://telegram.dog/aleena",
-   "logo": "https://telegra.ph/file/e3685fe4b49df44a374a8.jpg"
-}
+   "name": "HydraProBot",
+   "repository": "https://github.com/Zyruz-ramu/hydraprobot",
+   "success_url": "https://telegram.dog/HydraPro_bot",
+   "logo": "https://telegra.ph/file/3045588b3ecbfd54998b8.jpg"
