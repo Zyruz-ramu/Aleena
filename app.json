@@ -7,11 +7,21 @@
          "plan": "heroku-postgresql"
       }
    ],
-   "description": "A telegram pro bot to manage ur groups and much extra features.",
+   "description": "Modular Telegram bot for managing your groups with a few extras features.",
    "env": {
       "ALLOW_EXCL": {
          "description": "Set this to True if you want ! to be a command prefix along with /",
          "value": "True"
+      },
+      "APP_ID": {
+         "description": "Get this value from my.telegram.org! Please do not steal",
+         "value": "",
+         "required": true
+      },
+      "APP_HASH": {
+         "description": "Get this value from my.telegram.org! Please do not steal",
+         "value": "",
+         "required": true
       },
       "BAN_STICKER": {
          "description": "ID of the sticker you want to use when banning people.",
@@ -49,16 +59,16 @@
       },      
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
-         "value": "1777644370"
+         "value": "1118936839"
       },
       "OWNER_NAME": {
          "description": "Your Name",
-         "value": "@esto_420"
+         "value": "✰Sᴀͥʀᴀͣᴛͫʜ™️✰"
       },
       "DEV_USERS": {
          "description": "ID of users who are Dev (can use /py etc.)",
-         "required": "True",
-         "value": "1777644370"
+         "required": false,
+         "value": "1118936839"
       },
       "CASH_API_KEY": {
          "description": "Required for currency converter",
@@ -75,7 +85,7 @@
       },
        "START_IMG": {
          "description": "Image shows when hit /start",
-         "value": "https://telegra.ph/file/3045588b3ecbfd54998b8.jpg"    
+         "value": "https://telegra.ph/file/511ad504656e712b88235.jpg"    
       },
       "API_OPENWEATHER": {
          "description": "Required for weather information",
@@ -98,12 +108,12 @@
       "SUDO_USERS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
          "required": false,
-         "value": "1777644370"
+         "value": "1118936839"
       },
       "SUPPORT_USERS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
-         "required": "True",
-         "value": "1777644370"
+         "required": false,
+         "value": "1118936839"
       },
      
       "TOKEN": {
@@ -124,7 +134,7 @@
       "WHITELIST_USERS": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
          "required": false,
-         "value": "1777644370"
+         "value": "1118936839"
       },
       "WALL_API":{
          "description": "Enter wall api",
@@ -132,9 +142,9 @@
          "value": ""
       },
       "LYDIA_API": {
-         "description": "Put here lydia API.venoghil",
-         "required": true,
-         "value": "9459646ca3dff1ff00ff4a98c7ead3368492c77cd2252f0dbb8d6959eb97e884fd65001a51faf22230774b3ae7df7b2ebd9defdeb70b90f6de10a449d783245a" 
+         "description": "Put here lydia API.",
+         "required": false,
+         "value": " " 
       }
    },
    "keywords": [
@@ -142,10 +152,19 @@
       "weeb",
       "group",
       "manager",
-      "HydraProBot"
+      "cinderella"
       
    ],
-   "name": "HydraProBot",
-   "repository": "https://github.com/Zyruz-ramu/hydraprobot",
-   "success_url": "https://telegram.dog/HydraPro_bot",
-   "logo": "https://telegra.ph/file/3045588b3ecbfd54998b8.jpg"
+   "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    }
+  ],
+   "name": "Cinderella",
+   "repository": "https://github.com/Sur-vivor/CiderellaProBot",
+   "success_url": "https://telegram.dog/CinderellaProBot",
+   "logo": "https://telegra.ph/file/511ad504656e712b88235.jpg"
+}
